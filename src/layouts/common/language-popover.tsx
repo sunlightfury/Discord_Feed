@@ -12,9 +12,19 @@ import CustomPopover, { usePopover } from 'src/components/custom-popover';
 
 export const allLangs = [
   {
-    label: 'English',
+    label: 'English(UK)',
     value: 'en',
     icon: 'flagpack:gb-nir',
+  },
+  {
+    label: 'English(US)',
+    value: 'us',
+    icon: 'flagpack:us',
+  },
+  {
+    label: 'Japanese',
+    value: 'jp',
+    icon: 'flagpack:jp',
   },
   {
     label: 'French',
