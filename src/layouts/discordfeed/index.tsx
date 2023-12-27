@@ -37,7 +37,7 @@ export default function DiscordFeedLayout({ children }: Props) {
   if (isHorizontal) {
     return (
       <>
-        <Header onOpenNav={nav.onTrue} />
+        <Header />
 
         {lgUp ? renderHorizontal : renderNavVertical}
 
@@ -49,7 +49,7 @@ export default function DiscordFeedLayout({ children }: Props) {
   if (isMini) {
     return (
       <>
-        <Header onOpenNav={nav.onTrue} />
+        <Header />
 
         <Box
           sx={{
@@ -68,7 +68,7 @@ export default function DiscordFeedLayout({ children }: Props) {
 
   return (
     <>
-      <Header onOpenNav={nav.onTrue} />
+      <Header />
 
       <Box
         sx={{

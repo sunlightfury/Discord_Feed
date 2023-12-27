@@ -14,7 +14,10 @@ export default function Landing() {
 
   return (
     <Container maxWidth={settings.themeStretch ? false : 'xl'}>
-      <Typography variant="h4"> Hello DiscordFeed </Typography>
+      <Typography variant="h3" align="center">
+        {' '}
+        Hello DiscordFeed{' '}
+      </Typography>
 
       <Box
         sx={{
