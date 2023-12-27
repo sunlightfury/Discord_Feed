@@ -3,7 +3,7 @@
 const ROOTS = {
   AUTH: '/auth',
   DASHBOARD: '/dashboard',
-  DISCORDFEED: './discordfeed',
+  DISCORDFEED: '/discordfeed',
 };
 
 // ----------------------------------------------------------------------
@@ -27,6 +27,7 @@ export const paths = {
       root: `${ROOTS.DASHBOARD}/group`,
       five: `${ROOTS.DASHBOARD}/group/five`,
       six: `${ROOTS.DASHBOARD}/group/six`,
+      seven: `${ROOTS.DASHBOARD}/group/seven`,
     },
   },
   // DISCORD FEED
