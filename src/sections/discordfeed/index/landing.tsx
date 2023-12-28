@@ -4,16 +4,24 @@ import Box from '@mui/material/Box';
 import { alpha } from '@mui/material/styles';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
+import { makeStyles } from '@mui/styles';
 
 import { useSettingsContext } from 'src/components/settings';
 
 // ----------------------------------------------------------------------
 
+const useStyles = makeStyles((theme) => ({
+  customContainer: {
+    marginTop: '50px',
+  },
+}));
+
 export default function Landing() {
   const settings = useSettingsContext();
+  const classes = useStyles();
 
   return (
-    <Container maxWidth={settings.themeStretch ? false : 'xl'}>
+    <Container maxWidth={settings.themeStretch ? false : 'xl'} className={classes.customContainer}>
       <Typography variant="h3" align="center">
         {' '}
         Hello DiscordFeed{' '}
