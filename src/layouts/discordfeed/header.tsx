@@ -119,25 +119,10 @@ export default function Header() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="fixed" style={{ marginTop: '10px' }}>
-        <Toolbar disableGutters>
-          {/* <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mx: 2,
-              display: { md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 900,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            DISCORD FEED
-          </Typography> */}
-          <Image src={Logo} alt="LOGO" width={300} height={60} />
+        <Toolbar>
+          <Box sx={{ width: { xs: '150px', md: '300px' }, height: 'auto', position: 'relative' }}>
+            <Image src={Logo} alt="LOGO" layout="fill" objectFit="contain" />
+          </Box>
           <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center' }}>
             <SearchInput />
           </Box>
