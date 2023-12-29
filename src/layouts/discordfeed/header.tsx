@@ -18,6 +18,8 @@ import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import SearchInput from '@/layouts/discordfeed/searchInput';
+import Image from 'next/image';
+import Logo from '@/assets/imgs/logo.png';
 
 export default function Header() {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -116,9 +118,9 @@ export default function Header() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="fixed">
+      <AppBar position="fixed" style={{ marginTop: '10px' }}>
         <Toolbar disableGutters>
-          <Typography
+          {/* <Typography
             variant="h6"
             noWrap
             component="a"
@@ -127,16 +129,18 @@ export default function Header() {
               mx: 2,
               display: { md: 'flex' },
               fontFamily: 'monospace',
-              fontWeight: 700,
+              fontWeight: 900,
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
             }}
           >
-            ELM
-          </Typography>
-          <Box sx={{ flexGrow: 1 }} />
-          <SearchInput />
+            DISCORD FEED
+          </Typography> */}
+          <Image src={Logo} alt="LOGO" width={300} height={60} />
+          <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center' }}>
+            <SearchInput />
+          </Box>
           <Box sx={{ ml: 2, display: { xs: 'none', md: 'flex' } }}>
             <IconButton size="large" aria-label="mails" color="inherit">
               <MailIcon />

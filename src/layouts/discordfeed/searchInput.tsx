@@ -30,6 +30,10 @@ const SearchIconWrapper = styled('div')(({ theme }) => ({
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
   color: 'inherit',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  //   width: '100%',
   '& .MuiInputBase-input': {
     padding: theme.spacing(1, 2), // Adjust padding for mobile
     paddingLeft: `calc(1em + ${theme.spacing(4)})`, // Adjust left padding for mobile
